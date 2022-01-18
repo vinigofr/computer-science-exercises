@@ -15,3 +15,11 @@ print("Linha")
 import sys
 err = "Arquivo nao encontrado"
 print(f"Erro aconteceu: {err}", file=sys.stderr)
+
+import sys
+
+# Este exemplo manda o nome do arquivo no qual estamos
+# executando
+if __name__ == "__main__":
+    for argument in sys.argv:
+        print("Received -> ", argument)
