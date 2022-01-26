@@ -4,7 +4,7 @@ import csv
 # lê os dados
 with open("balneabilidade.csv") as file:
     beach_status_reader = csv.reader(file, delimiter=",", quotechar='"')
-    header, *data = beach_status_reader
+    header, vinicius, *data = beach_status_reader
 
 # agrupa campanhas e suas respectivas balneabilidades
 bathing_by_campaign = {}
