@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinicius Page</title>
+  </head>
+  <body>
+    <form>
+      <label for="files" class="button"> Selecione os arquivos: </label>
+      <input type="file" id="files" multiple style="visibility: hidden" />
+      <button type="submit">Remover senha</button>
+    </form>
+  </body>
+  <script>
+    const inputFile = document.getElementById("files");
+
+    inputFile.addEventListener("change", (e) => {
+      console.log(inputFile.files[0]);
+    });
+  </script>
+</html>

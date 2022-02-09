@@ -1,0 +1,1 @@
+sudo iptables --delete INPUT --protocol ICMP --jump REJECT

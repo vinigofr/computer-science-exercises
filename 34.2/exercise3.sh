@@ -1,0 +1,1 @@
+sudo iptables --append OUTPUT --protocol tcp --sport 443 --jump REJECT
